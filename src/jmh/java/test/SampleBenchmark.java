@@ -1,9 +1,9 @@
 package test;
 
 import org.apache.commons.lang3.StringUtils;
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.annotations.*;
 
+@State(Scope.Benchmark)
 public class SampleBenchmark {
   private String data;
 
