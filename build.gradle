@@ -1,0 +1,23 @@
+buildscript { 
+  repositories { 
+    jcenter()     
+  } 
+}
+
+plugins {
+  id 'java'
+  id 'me.champeau.gradle.jmh' version '0.2.0'
+}
+
+repositories { 
+  jcenter() 
+}
+
+jmh {
+  jmhVersion = '1.11.2'
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+  jmh 'org.apache.commons:commons-lang3:3.4' 
+}
